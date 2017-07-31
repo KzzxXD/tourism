@@ -112,3 +112,117 @@ $(document).ready(function () {
                 });
     });
 });
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-alps').click(function (event) {
+        event.preventDefault();
+        $('#pillow-alps').slideDown(400,
+            function () {
+                $('#modal-window-alps')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-alps, #pillow-alps').click(function () {
+        $('#modal-window-alps')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-alps').slideUp(600);
+                });
+    });
+});
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-iceland').click(function (event) {
+        event.preventDefault();
+        $('#pillow-iceland').slideDown(400,
+            function () {
+                $('#modal-window-iceland')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-iceland, #pillow-iceland').click(function () {
+        $('#modal-window-iceland')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-iceland').slideUp(600);
+                });
+    });
+});
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-bukovel').click(function (event) {
+        event.preventDefault();
+        $('#pillow-bukovel').slideDown(400,
+            function () {
+                $('#modal-window-bukovel')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-bukovel, #pillow-bukovel').click(function () {
+        $('#modal-window-bukovel')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-bukovel').slideUp(600);
+                });
+    });
+});
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-munich').click(function (event) {
+        event.preventDefault();
+        $('#pillow-munich').slideDown(400,
+            function () {
+                $('#modal-window-munich')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-munich, #pillow-munich').click(function () {
+        $('#modal-window-munich')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-munich').slideUp(600);
+                });
+    });
+});
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-amsterdam').click(function (event) {
+        event.preventDefault();
+        $('#pillow-amsterdam').slideDown(400,
+            function () {
+                $('#modal-window-amsterdam')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-amsterdam, #pillow-amsterdam').click(function () {
+        $('#modal-window-amsterdam')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-amsterdam').slideUp(600);
+                });
+    });
+});
+$(document).ready(function () {
+    $('a.modal-window-moreinfo-madrid').click(function (event) {
+        event.preventDefault();
+        $('#pillow-madrid').slideDown(400,
+            function () {
+                $('#modal-window-madrid')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'},200);
+            });
+    });
+    $('#modal-window-close-madrid, #pillow-madrid').click(function () {
+        $('#modal-window-madrid')
+            .animate({opacity: 0, top: '45%'},200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#pillow-madrid').slideUp(600);
+                });
+    });
+});
