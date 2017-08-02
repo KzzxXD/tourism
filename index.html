@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tourism</title>
-    <link rel="shortcut icon" href="img/imbb.jpg" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -24,7 +24,7 @@
                     </div>
                     <ul class="nav navbar-nav">
                         <li class="dws-li" id="home-scroll"><a href="#">Home</a></li>
-                        <li class="dws-li scroll-season"><a href="#summer-content">Season</a></li>
+                        <li class="dws-li scroll-season"><a href="#seasons-content" class="season-selection">Season</a></li>
                         <li class="dws-li scroll-aboutus"><a href="#why-us-width">About us</a></li>
                         <li class="dws-li scroll-moreinfo"><a href="#background-image-exploer">More info</a></li>
                         <li class="dws-li scroll-contacts"><a href="#form-contact">Contacts</a></li>
@@ -34,7 +34,13 @@
                     <div class="header-text">
                         <h1>Quality and best service <br> is our responsibility </h1>
                         <h2>have a good day</h2>
-                        <a href="#summer-content" class="scroll-season">Rest now</a>
+                        <div class="seasons-content">
+                            <a href="#summer-content" class="scroll-season-summer text-seasons" id="href-rest-summer"><i class="fa fa-sun-o" id="text-summer-fa" aria-hidden="true"></i>Summer</a>
+                            <a href="#autumn-content" class="scroll-season-autumn text-seasons" id="href-rest-autumn"><i class="fa fa-leaf" id="text-autumn-fa" aria-hidden="true"></i>Autumn</a>
+                            <a href="#winter-content" class="scroll-season-winter text-seasons" id="href-rest-winter"><i class="fa fa-snowflake-o" id="text-winter-fa" aria-hidden="true"></i>Winter</a>
+                            <a href="#spring-content" class="scroll-season-spring text-seasons" id="href-rest-spring"><i class="fa fa-tree" id="text-spring-fa" aria-hidden="true"></i>Spring</a>
+                        </div>
+                        <span id="button-header"><i class="fa fa-sort" aria-hidden="true"></i></span>
                     </div>
                 </div>
             </header>
@@ -345,20 +351,20 @@
                     </div>
                     <form id="contact-form">
                         <div class="grid-itm-form">
-                            <input type="text" placeholder="First Name*" required>
-                            <input type="text" placeholder="Last Name*" required>
+                            <input type="text" placeholder="First Name*" id="firstName" required>
+                            <input type="text" placeholder="Last Name*" id="lastName" required>
                         </div>
                         <div class="grid-itm-form">
-                            <input class="input-width" type="email" placeholder="Email address*" required>
+                            <input class="input-width" type="email" placeholder="Email address*" id="email" required>
                         </div>
                         <div class="grid-itm-form">
-                            <input class="input-width" type="password" placeholder="Set A password*" required>
+                            <input class="input-width" type="password" placeholder="Set A password*" id="password" required>
                         </div>
                         <div class="grid-itm-form">
-                            <input class="input-width" type="password" placeholder="Repeat the password*" required>
+                            <input class="input-width" type="text" placeholder="City*" id="city" required>
                         </div>
                         <div class="grid-itm-form">
-                            <textarea class="text-area-height"></textarea>
+                            <textarea class="text-area-height" id="comment" placeholder="Comment"></textarea>
                         </div>
                         <div class="grid-itm-form">
                             <input class="button-input" type="submit" value="get in touch">
@@ -366,9 +372,9 @@
                     </form>
                 </div>
             </section>
-        </div>
-        <div class="back">
-            <a href="#home-scroll" class="back-home-link"><span class="back-home"><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a>
+            <div class="back">
+                <a href="#home-scroll" class="back-home-link"><span class="back-home"><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a>
+            </div>
         </div>
         <footer>
             <div class="container">
@@ -398,5 +404,7 @@
         <script src="js/menu.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/modalwindow.js"></script>
+        <script src="js/circle.js"></script>
+        <script src="js/color.js"></script>
     </body>
 </html>
