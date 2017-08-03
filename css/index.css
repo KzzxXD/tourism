@@ -113,6 +113,7 @@ body{
 }
 /*Menu*/
 #menu{
+    z-index: 999;
     background:rgba(255,195,174, .8);
     transition: 1.5s;
 }
@@ -162,6 +163,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     list-style-type:none;
+    z-index:99;
 }
 .dws-li{
     transition: 1.5s;
